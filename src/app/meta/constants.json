@@ -1,0 +1,44 @@
+{
+    "apiHost": {
+        "development": "//127.0.0.1",
+        "production": ""
+    },
+    "authorization": {
+        "user": "client",
+        "password": "clientpassword",
+        "rememberMeDays": 14
+    },
+    "pagination": {
+        "defaultPage": 1,
+        "defaultRecordsPerPage": 40,
+        "buttonsPerSet": 10
+    },
+    "router": {
+        "path": {
+            "app": {
+                "info": "/app/info"
+            },
+            "auth": {
+                "reset": "/reset",
+                "signUp": "/sign-up",
+                "signIn": "/sign-in"
+            },
+            "posts": {
+                "list": "/posts"
+            },
+            "member": {
+                "profile": {
+                    "general": "/profile/general",
+                    "password": "/profile/password",
+                    "slug": "/profile/username",
+                    "email": "/profile/email"
+                },
+                "communities": "/member/:memberSlug/communities",
+                "following": "/member/:memberSlug/following",
+                "likes": "/member/:memberSlug/likes",
+                "photos": "/member/{slug}/photos",
+                "videos": "/member/{slug}/videos"
+            }
+        }
+    }
+}
